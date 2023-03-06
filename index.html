@@ -7,16 +7,13 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1><span class="deco">SPI</span>-<span class="deco">CPI</span> CALCULATOR</h1>
+        <h1>SPI-CPI CALCULATOR</h1>
     </header>
     <div class="header">
         <div class="branch">
@@ -40,15 +37,16 @@
         </div>
         <p>In which semester did you have your ELC?</p>
         <div class="choice">
-            <form name="choice" action="" method="post"></form>
+            <form name="choice" action="" method="post">
             <select name="semch">
                 <option value="first">Semester 1</option>
                 <option value="second">Semester 2</option>
             </select>
+            </form>
         </div>
-        <button class="spi1"><a href="sem1g1.html" >Calculate SPI for Semester 1</a></button>
-        <button class="spi2"><a href="sem2g2.html" >Calculate SPI for Semester 2</a></button>
-        <button><a href="cpi.html" >Calculate CPI for both Semesters</a></button>
+        <button class="spi1"><a id="firstsem" href="sem1g1.html" >Calculate SPI for Semester 1</a></button>
+        <button class="spi2"><a id="secondsem" href="sem2g2.html" >Calculate SPI for Semester 2</a></button>
+        <button><a id="cumsem" href="cpi1.html" >Calculate CPI for both Semesters</a></button>
     </div>
 </body>
 </html>
