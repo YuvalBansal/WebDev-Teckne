@@ -8,6 +8,7 @@ k.onchange = function () {
         let slink = document.getElementById('secondsem')
         let clink = document.getElementById('cumsem')
         flink.href = "sem1g1.html"
+        slink.href = "sem2g2.html"
         clink.href = "cpi1.html"
     }
     else {
