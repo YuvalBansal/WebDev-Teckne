@@ -18,6 +18,7 @@
     <div class="header">
         <div class="branch">
             Enter Your Department <select>
+                <option>Select Department</option>
                 <option>AE</option>
                 <option>BSBE</option>
                 <option>CHE</option>
@@ -34,14 +35,16 @@
                 <option>SDS</option>
             </select>
         </div>
-        <form name="semester" action="" method="post">
-            <p>In which semester did you have your ELC? </p>
-            <input type="radio" id="sem1" name="semester" value="sem1">
-            <label for="sem1">Semester 1</label><br>
-            <input type="radio" id="sem2" name="semester" value="sem2">
-            <label for="sem2">Semester 2</label><br>
+        <p>In which semester did you have your ELC?</p>
+        <div class="choice">
+            <form name="choice" action="" method="post"></form>
+            <select name="semch">
+                <option value="first">Semester 1</option>
+                <option value="second">Semester 2</option>
+            </select>
+        </div>
         <button class="spi1"><a href="sem1g1.html" >Calculate SPI for Semester 1</a></button>
-        <button class="spi2"><a href="sem2g1.html" >Calculate SPI for Semester 2</a></button>
+        <button class="spi2"><a href="sem2g2.html" >Calculate SPI for Semester 2</a></button>
         <button><a href="cpi.html" >Calculate CPI for both Semesters</a></button>
     </div>
 </body>
