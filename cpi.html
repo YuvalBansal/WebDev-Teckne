@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -13,10 +16,12 @@
 </head>
 <body>
     <div class="dropdown-menu">
-        <h1>Calculate CPI for First and Second Semester</h1>
+        <h1>Calculate <span class="deco">CPI</span> for First and Second Semester</h1>
         <div class="content">
+            <section class="flex">
+                <section class="spi1">
             <form name="grp1"action="" method="post">
-            ELC11X  : <select name="ELC">
+            ELC11X(9)  : <select name="ELC">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -29,7 +34,7 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
-            MTH111M : <select name="MTH1">
+            MTH111M(6) : <select name="MTH1">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -42,7 +47,7 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
-            MTH112M : <select name="MTH2">
+            MTH112M(6) : <select name="MTH2">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -55,7 +60,7 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
-            PHY11X  : <select name="PHY">
+            PHY11X(11)  : <select name="PHY">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -68,7 +73,7 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
-            PHY111  : <select name="PHY1">
+            TA111  : <select name="PHY1">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -81,7 +86,7 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
-            TA111   : <select name="TA">
+            CHM112M   : <select name="TA">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -94,7 +99,7 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
-            CHM112M : <select name="CHM2">
+            CHM113M : <select name="CHM2">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -107,7 +112,7 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
-            CHM113M : <select name="CHM3">
+            PHY111 : <select name="CHM3">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -121,12 +126,14 @@
                 <option value="0">I</option>
             </select></br>
             </form>
-            PE111   : <select name="PE">
+            PE11X : <select name="PE">
                 <option>S</option>
                 <option>X</option>
             </select></br>
-            <button id="btn" onclick="calcsem1()">NEXT</button>
+            <button id="btn" onclick="calcsem1()">CALCULATE</button>
             <p>SPI = <input type="submit" value="Your SPI" name="submit" id="sem1spi"></p>
+                </section>
+                <section class="spi2">
             <form name="grp2"action="" method="post">
             ETH111  : <select name="ETH">
                 <option>S</option>
@@ -224,13 +231,15 @@
                 <option value="0">I</option>
             </select></br>
             </form>
-            PE112   : <select name="PE2">
+            PE11X : <select name="PE2">
                 <option>S</option>
                 <option>X</option>
             </select></br>
-            <button id="btn" onclick="calcsem2()">NEXT</button>
+            <button id="btn" onclick="calcsem2()">CALCULATE</button>
             <p>SPI = <input type="submit" value="Your SPI" name="submit" id="sem2spi"></p>
-            <button id="btn" onclick="calccpi()">Show CPI</button>
+                </section>
+            </section>
+            <button id="btn" onclick="calccpi()">SHOW CPI</button>
             <p>CPI = <input type="submit" value="Your CPI" name="submit" id="cpi"></p>
         </div>
     </div>

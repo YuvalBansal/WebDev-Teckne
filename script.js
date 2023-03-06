@@ -1,23 +1,14 @@
-let cpi = document.forms['choice']
-let k = cpi.semch
-let semval = "first"
-k.onchange = function(){
-    semval = this.value
-    if (semval == "first"){
-        let flink = document.getElementById('firstsem')
-        let slink = document.getElementById('secondsem')
-        flink.href = "sem1g1.html"
-        slink.href = "sem2g2.html"
-    }
-    else{
-        let flink = document.getElementById('firstsem')
-        let slink = document.getElementById('secondsem')
-        flink.href = "sem1g2.html"
-        slink.href = "sem2g1.html"
-    } 
-}
+// function fn1(){
+//     var sem1 = document.getElementById('sem1')
+//     var sem2 = document.getElementById('sem2')
 
+//     if (sem1.checked == true){
 
+//     }
+//     else{
+
+//     }
+// }
 
 var x = 0, y = 0;
 
