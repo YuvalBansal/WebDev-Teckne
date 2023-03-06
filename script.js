@@ -1,14 +1,14 @@
-function fn1(){
-    var sem1 = document.getElementById('sem1')
-    var sem2 = document.getElementById('sem2')
+// function fn1(){
+//     var sem1 = document.getElementById('sem1')
+//     var sem2 = document.getElementById('sem2')
 
-    if (sem1.checked == true){
+//     if (sem1.checked == true){
 
-    }
-    else{
+//     }
+//     else{
 
-    }
-}
+//     }
+// }
 
 var x = 0, y = 0;
 
@@ -108,7 +108,6 @@ function calcsem2() {
     document.getElementById('sem2spi').value = y.toFixed(2);
 }
 
-function cpi(){
-    if (x>0 && y>0) document.getElementById('cpi').value = ((x+y)/2).toFixed(2);
-    else document.getElementById('cpi').value = "Enter Grades For Both Semesters!";
+function calccpi(){
+    document.getElementById('cpi').value = ((x+y)/2).toFixed(2);
 }
