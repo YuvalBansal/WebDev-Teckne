@@ -1,0 +1,17 @@
+body{
+    background: url(images/background5.webp);
+    background-size: cover;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+.header{
+    text-align: center;
+}
+.branch{
+    font-size: 30px;
+}
