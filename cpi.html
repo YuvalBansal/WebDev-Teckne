@@ -11,7 +11,7 @@
 <body>
     <div class="dropdown-menu">
         <div class="content">
-            <form name="both"action="" method="post">
+            <form name="grp1"action="" method="post">
             ELC11X  : <select name="ELC">
                 <option value="10">A*</option>
                 <option value="10">A</option>
@@ -116,15 +116,19 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
+            </form>
             PE111   : <select name="PE">
                 <option>S</option>
                 <option>X</option>
             </select></br>
+            <button id="btn" onclick="calcsem1()">NEXT</button>
+            <p>SPI = <input type="submit" value="Your SPI" name="submit" id="sem1spi"></p>
+            <form name="grp2"action="" method="post">
             ETH111  : <select name="ETH">
                 <option>S</option>
                 <option>X</option>
             </select></br>
-            MTH113M : <select name="MTH3">
+            MTH111M : <select name="MTH3">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -137,7 +141,7 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
-            MTH114M : <select name="MTH4">
+            MTH112M : <select name="MTH4">
                 <option value="10">A*</option>
                 <option value="10">A</option>
                 <option value="9">B+</option>
@@ -215,12 +219,14 @@
                 <option value="0">F</option>
                 <option value="0">I</option>
             </select></br>
+            </form>
             PE112   : <select name="PE2">
                 <option>S</option>
                 <option>X</option>
             </select></br>
-            </form>
-            <button id="btn" onclick="calccpi()">NEXT</button>
+            <button id="btn" onclick="calcsem2()">NEXT</button>
+            <p>SPI = <input type="submit" value="Your SPI" name="submit" id="sem2spi"></p>
+            <button id="btn" onclick="calccpi()">Show CPI</button>
             <p>CPI = <input type="submit" value="Your CPI" name="submit" id="cpi"></p>
         </div>
     </div>
