@@ -97,5 +97,5 @@ function calcsem2() {
 }
 
 function calccpi() {
-    document.getElementById('cpi').value = ((x + y) / 2).toFixed(2);
+    document.getElementById('cpi').value = ((x*46 + y*52) / 98).toFixed(2);
 }
